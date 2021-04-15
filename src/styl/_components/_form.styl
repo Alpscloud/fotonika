@@ -12,6 +12,51 @@ input[type="search"]::-webkit-search-results-decoration
 	transform translate3d(0,0,0)
 
 
+.search
+	width 100%
+	flex 1
+	max-width 300px
+	&-form
+		width 100%
+		&__group
+			position relative
+		&__input
+			display block
+			width 100%
+			border 1px solid #999999
+			color $basic-white-color
+			font 16px $Reg
+			padding 13px 50px 13px 24px
+			&:hover,
+			&:focus
+				border-color $accent-color
+			&::-webkit-input-placeholder
+				16px $Reg
+				color #999999
+			&::-moz-placeholder
+				16px $Reg
+				color #999999
+			&:-moz-placeholder
+				16px $Reg
+				color #999999
+			&:-ms-input-placeholder
+				16px $Reg
+				color #999999
+				
+		&__btn
+			display inline-block
+			width 22px
+			height 22px
+			position absolute
+			vertical-center()
+			right 19px
+			svg
+				svg()
+				fill #c6c6c6
+			&:hover
+				svg
+					fill $accent-color
+			
 
 
 .form
