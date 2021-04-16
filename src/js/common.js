@@ -131,11 +131,24 @@ $(document).ready(function() {
 		$(this).parents('.orders-history__item').find('.orders-history__item--details').stop().slideToggle(250);
 	});
 
+	// Tabs
+	$('.js-tab-content').not(":first").hide();
+	$('.js-tab-btn:first').addClass('is-active');
+
+	$('.js-tab-btn').on('click', function(e) {
+		e.preventDefault();
+		$('.js-tab-content').removeClass('is-active');
+		$('.js-tab-btn').removeClass('is-active').eq($(this).index()).addClass('is-active');
+		$('.js-tab-content').hide().eq($(this).index()).fadeIn().addClass('is-active');
+	}).eq(0).addClass('is-active');
+
 
 	$("input[type=tel]").inputmask({
 		"mask": "+7 (999) 999-9999","clearIncomplete": false,
 		'showMaskOnHover': false
 	});
+
+
 
 
 	// ========= G o o g l e   m a p   s t y l e s ===========

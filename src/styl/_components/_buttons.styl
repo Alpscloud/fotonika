@@ -31,7 +31,17 @@
 			color $basic-white-color
 			border-color $accent-color
 			background-color $accent-color
+			
+		&-accent
+			background-color transparent
+			color $accent-color !important
+			border-color $accent-color
+			&:hover
+				color #313131 !important
+				background-color $accent-color
 		
+							
+					
 	&-dark
 		background-color $basic-black-color
 		
@@ -90,6 +100,28 @@
 		&:hover
 			svg
 				fill $accent-color
+				
+	&-tab
+		display inline-block
+		font 16px $Reg
+		color #777777
+		padding 17px
+		text-align center
+		margin-right -4px
+		background-color #e2e2e2
+		span
+			display inline-block
+			border-bottom 2px solid transparent
+			transition border-color .17s ease-in-out
+			pointer-events none
+		&:hover
+			span
+				border-color $accent-color
+		&.is-active
+			background-color $basic-white-color
+			color #313131
+			span
+				border-color $accent-color
 
 	&-hamburger
 		display none
