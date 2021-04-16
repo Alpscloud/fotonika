@@ -1,0 +1,105 @@
+.cart-link
+	display inline-block
+	width 24px
+	height 24px
+	position relative
+	flex none
+	margin-right 36px
+	&:before
+		content attr(data-cart-count)
+		flex-col-center()
+		background-color $accent-color
+		color $basic-white-color
+		font 12px $Reg
+		width 23px
+		height 23px
+		line-height 23px
+		text-align center
+		border-radius 50%
+		position absolute
+		left 100%
+		top -11.5px
+		margin-left 3px
+	svg
+		svg()
+		fill $basic-white-color
+	&:hover
+		svg
+			fill $accent-color
+			
+
+.login-link
+	font 16px $Reg
+	color $basic-white-color
+	&:hover
+		color $accent-color
+		
+
+.callback
+	font 14px $Reg
+	color $accent-color
+	border-bottom 1px solid
+	white-space nowrap
+	&:hover
+		color $basic-white-color
+		
+.email-link
+	color $alternate-light-text-color
+	font 14px $Reg
+	white-space nowrap
+	&:hover
+		color $accent-color
+		
+.phone
+	span
+		display inline-block
+		margin-right 11px
+		font 12px $Reg
+		color #919191
+	&-link
+		font 18px $Reg
+		color $basic-white-color
+		white-space nowrap
+		&:hover
+			color $accent-color
+			
+	
+.langs
+	font 12px $Reg
+	line-height 1
+	color #919191
+	li
+		display inline-block
+		margin-right 22px
+		&:last-child
+			margin-right 0
+	a, span
+		color inherit
+		text-decoration underline
+		&:hover
+			color $basic-white-color
+			
+	.is-active
+		color $basic-white-color
+
+
+.socials
+	font-size 0
+	height 38px
+	white-space nowrap
+	&__item
+		display inline-block
+		margin-right 14px
+		&:last-child
+			margin-right 0
+	&__link
+		display block
+		width 38px
+		height 38px
+		border-radius 50%
+		svg
+			svg()
+			fill $accent-color
+		&:hover
+			svg
+				fill $basic-white-color

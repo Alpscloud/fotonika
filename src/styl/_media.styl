@@ -9,3 +9,644 @@
 +min-screen-height(minHeight)
 */
 
++max-screen(1500px)
+	// Footer
+	.footer-contacts
+		margin-left 40px
+		margin-right 40px
+		
+	.footer .socials
+		margin-right 40px
+		
+	
+
++max-screen(1365px)
+	// Header
+	.nav-list__item
+		margin-right 50px
+		
+	.header-top
+		padding 15px 0
+		
+	.header-col
+		margin-left 30px
+		
+	// Promo
+	.promo-slide__row
+		padding-left 0
+		padding-right 0
+		
+	// Categories
+	.category-card__wrapper
+		width 33.3333%
+		padding-left 15px
+		padding-right 15px
+		
+	.categories-cards__row
+		margin-left -15px
+		margin-right -15px
+
++max-screen(1280px)
+	// Footer
+	.footer__row
+		.search
+			max-width 100%
+			flex none
+			margin-top 30px
+			
+	.footer
+		.nav-list
+			&__item
+				margin-right 30px
+			&__link
+				font-size 14px
+	
+
++max-screen(1200px)
+	// Header
+	.login-link
+		display inline-block
+		width 24px
+		height 24px
+		background url('../img/icons/svg/user.svg') no-repeat / contain
+		span
+			display none
+			
++max-screen(1050px)
+	// Header
+	
+	.header
+		.nav
+			position fixed
+			top 0
+			right 0
+			left 0
+			bottom 0
+			transition all .17s ease-in-out
+			opacity 0
+			visibility hidden
+			pointer-events none
+			z-index 15
+			background-color rgba($basic-black-color, .4)
+			
+			li.is-active
+				button
+					transform rotate(-180deg)
+			
+			&-list
+				&__wrapper
+					width 300px
+					background-color $basic-white-color
+					height 100vh
+					float right
+					padding 30px 0 60px 30px
+					display block
+					overflow-y auto
+					transition all .2s ease-in-out
+					transform translateX(102%)
+						
+					.logo,
+					.btn-close
+						display inline-block
+						
+					.langs
+						display block !important
+						margin-top 40px
+						
+						a, span
+							color $light-text-color
+							
+						.is-active
+							color $accent-color
+							
+					.phones
+						display block
+						margin-top 40px
+						padding-right 30px
+						text-align left
+						span
+							display block
+							margin-right 0
+						
+							
+					.phone
+						margin-bottom 10px
+						&:last-child
+							margin-bottom 0
+						&-link
+							color $text-color
+					
+				&__item
+					display flex
+					align-items center
+					justify-content space-between
+					margin-right 0
+					flex-wrap wrap
+					position relative
+					.btn-arrow
+						display inline-block
+						pointer-events auto
+						width 30px
+						height 30px
+						margin-left 20px
+					&:last-child
+						margin-bottom 0
+					&:hover
+						.nav-list__link
+							color $text-color
+					
+				&__link
+					color $text-color
+					text-align left
+					padding 10px 30px 10px 0
+					display block
+					flex 1
+					font-size 16px
+					&:before
+						display none
+			
+			&.is-opened
+				opacity 1
+				visibility visible
+				pointer-events auto
+				.nav-list__wrapper
+					transform translateX(0)
+					
+	.nav-sublist
+		position relative
+		top auto
+		transform none
+		transition none
+		left auto
+		width calc(100% + 30px)
+		margin-left -30px
+		opacity 1
+		visibility visible
+		pointer-events auto
+		display none
+		
+		a
+			padding 10px 30px
+			font-size 14px
+			&:after
+				display none
+				
+		li
+			display flex
+			flex-wrap wrap
+			background-color $nav-sublist-link-bg
+			.btn-arrow-link
+				display inline-block
+				height auto
+				background-color $nav-sublist-link-bg
+				width 30px
+				background-size 13px
+			&:hover
+				> a
+					background-color $nav-sublist-link-bg
+				
+			ul
+				display none
+				left auto
+				position relative
+				top auto
+				height auto
+				transform none
+				width 100%
+				opacity 1
+				visibility visible
+				pointer-events auto
+				background-color #fff
+				a
+					background-color $nav-sublist-link-hover-bg !important
+	
+	.btn-hamburger,
+	.btn-toggle-phones
+		display inline-block
+		
+			
+	.header
+		position fixed
+		top 0
+		left 0
+		width 100%
+		z-index 10
+		&-top
+			.logo
+				img
+					max-width 100px
+		.nav-panel
+			.langs
+				display none
+				
+		&-tools
+			margin-right 0
+				
+		&-contacts
+			position absolute
+			top 100%
+			left 0
+			width 100%
+			max-width 100%
+			z-index 5
+			padding 5px 20px
+			background-color $alternate-dark-bg
+			margin 0
+			display none
+			
+		.search
+			max-width none
+			flex 1
+			
+	.search-form__input
+		padding-top 9px
+		padding-bottom 9px
+		
+	.main
+		padding-top 71px
+		
+	// Promo
+	.promo-slide
+		min-height 500px
+		&__row
+			position relative
+		&__title
+			font-size 42px
+			line-height 46px
+			margin-bottom 30px
+		&__content
+			max-width 450px
+			position relative
+			z-index 1
+		&__img
+			width 460px
+			position absolute	
+			right 0
+			vertical-center()
+			
+	// Page contacts
+	.contacts-block
+		&__info
+			padding-left 50px
+			padding-right 50px
+			
+	// CAbinet
+	.orders-history__col
+		&:nth-child(1)
+			max-width 150px
+		&:nth-child(2)
+			max-width 170px
+		&:nth-child(3)
+			text-align left
+			
+	.orders-history__item
+		font-size 18px
+		
+	.orders-history__product
+		padding-left 10px
+		padding-right 10px
+		&--thumbnail
+			margin-right 25px
+			
+	.orders-history__product--col:nth-child(4)
+		max-width 160px
+
++max-screen(992px)
+	// Categoris
+	.category-card__wrapper
+		width 50%
+		
+	.sect__categories-cards
+		&:before
+			display none
+			
+	// Brands
+	.brand-card__wrapper
+		width 100%
+		&:last-child
+			margin-bottom 0
+			
+	// Footer
+	.footer
+		font-size 14px
+		.logo
+			margin-bottom 15px
+		&__row
+			flex-col-center()
+		
+		&__content
+			padding 25px 0
+		
+		&-contacts
+			width 100%
+			margin-left 0
+			margin-right 0
+			flex-direction column
+			text-align center
+			align-items center
+			
+		.phones
+			margin-left 0
+			margin 15px 0
+			
+		.phone-link
+			font-size 16px
+			
+		.socials
+			margin-right 0
+			margin-top 15px
+			
+		.tools-links
+			margin-left 0
+			
+		.nav-list__item
+			margin-right 20px
+		
+
+		
++max-screen(767px)
+	// Promo
+	.promo-slide
+		padding-top 50px
+		display block
+		&__row
+			flex-wrap wrap
+		&__img
+			position relative
+			transform none
+			right auto
+			top auto
+			flex none
+			order 1
+			width 100%
+			max-width 460px
+			margin-bottom 40px
+		&__content
+			max-width 100%
+			flex none
+			order 2
+			
+	.footer
+		.langs
+			display none
+			
+		&__row
+			.langs
+				display block
+				margin-top 15px
+				
+		.search
+			margin-top 15px
+			
+		.nav-list
+			flex-wrap wrap
+			display flex
+			justify-content center
+			&__item
+				margin-right 0
+			&__link
+				padding 7.5px
+				
+
+	// Page contacts
+	.contacts-block
+		flex-wrap wrap
+		font-size 16px
+		&__phones
+			margin-bottom 25px
+		&__info
+			padding 40px 20px
+			width 100%
+		&__map
+			width 100%
+			height 350px
+			
+		.block-title
+			font-size 24px
+			margin-bottom 25px
+		
+
++max-screen(620px)
+	body
+		font-size 14px
+		line-height 19px
+		
+	.popup__body
+		padding-left 20px
+		padding-right 20px
+		
+	.block-title
+		font-size 26px
+		line-height 30px
+		
+		
+		
+	.main
+		padding-top 69px
+		
+	.required
+		font-size 18px
+		
+	.form-notice
+		font-size 14px
+		.required
+			margin-right 5px
+			
+	.form-checkbox
+		font-size 14px
+		
+	.form-input
+		padding-left 15px
+		padding-right 15px
+		
+	.form-group__label--text
+		left 15px
+		font-size 14px
+	
+	// Header
+	.btn-toggle-search
+		display inline-block
+		
+		
+	.header
+		&-top__row
+			flex-wrap nowrap
+		&-col
+			justify-content flex-end
+			flex-wrap nowrap
+			margin-left 15px
+		.search
+			position absolute
+			top 100%
+			left 0
+			width 100%
+			padding 7px 20px
+			background-color $alternate-dark-bg
+			margin 0
+			display none
+			
+	.cart-link
+		margin-right 20px
+		&:before
+			left auto
+			font-size 9px
+			width 18px
+			height 18px
+			right -9px
+			top -9px
+			
+	// Promo
+		
+	.promo-slide
+		min-height auto
+		padding-top 30px
+		padding-bottom 100px
+		&:before
+			background-position top 0 right
+		&__img
+			max-width 100%
+			margin-bottom 20px
+		&__title
+			font-size 36px
+			line-height 40px
+			
+	// Categories
+	.sect__categories-cards
+		padding-top 60px
+		padding-bottom 60px
+
+	.category-card__wrapper
+		width 100%
+		margin-bottom 50px
+		&:last-child
+			margin-bottom 0
+			
+	.category-card
+		ul
+			padding-right 0
+		&__title
+			font-size 26px
+			line-height 30px
+			margin-bottom 15px
+		&__thumbnail
+			margin-bottom 15px
+			
+	.decor-title
+		&:before
+			width 6px
+			
+
+			
+	// Brands
+	.sect__brands-cards
+		padding-bottom 60px
+		
+	.brand-card
+		padding 40px 20px
+		&__wrapper
+			width calc(100% + 40px)
+			margin-left -20px
+			margin-right -20px
+			
+		&__logo
+			margin-bottom 20px
+			
+		&__title
+			font-size 26px
+			line-height 30px
+			margin-bottom 20px
+			
+	// Cabinet
+	.cabinet
+		padding-bottom 0
+	.cabinet-form
+		max-width 100%
+		.form-group
+			padding-left 0
+			&__label-inline
+				position relative
+				transform none
+				width 100%
+				display block
+				left auto
+				top auto
+				margin-bottom 3px
+				
+	// Cabinet
+	.orders-history
+		&__header
+			display none
+			
+		&__item--information
+			padding-left 15px
+			padding-right 50px
+			white-space nowrap
+			font-size 16px
+			.row
+				max-width 100%
+				justify-content space-between
+			.btn-toggle
+				right 5px
+			
+		&__col
+			width auto
+			max-width none
+			flex none
+			&:nth-child(1)
+				width 20px
+				max-width none
+				
+	.orders-history__item--details
+		padding-left 15px
+		padding-right 15px
+		font-size 16px
+		
+	.orders-history__product
+		padding-left 0
+		padding-right 0
+		.row
+			flex-wrap wrap
+			
+		&--col
+			max-width none
+			width 33.3333%
+			text-align left
+			&:nth-child(1)
+				width 100%
+				max-width none
+				flex none
+				margin-bottom 10px
+				
+			span
+				display block
+				position relative
+				&:before
+					content attr(data-label)
+					display block
+					font 12px $PtNarrow
+					color $ultralight-text-color	
+	
++max-screen(430px)
+	.header-contacts 
+		.tools-links
+			display none
+		.row
+			justify-content center
+			
++max-screen(400px)
+	// Brands
+	.brand-card
+		img
+			max-width 100%
+			
++max-screen(364px)
+	.container
+		padding-left 15px
+		padding-right 15px
+		
+	.brand-card
+		padding 30px 15px
+		&__wrapper
+			width calc(100% + 30px)
+			margin-left -15px
+			margin-right -15px

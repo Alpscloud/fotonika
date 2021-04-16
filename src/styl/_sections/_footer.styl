@@ -1,2 +1,55 @@
 .footer
 	background-color $footer-bg
+	font 16px $Reg
+	&__content
+		padding 60px 0
+	
+	.search
+		max-width 330px
+		
+	&__row
+		.langs
+			display none
+		
+
+	&-contacts
+		display flex
+		flex 1
+		align-items center
+		justify-content space-between
+		margin 0 80px
+		&__information
+			color $alternate-light-text-color 
+			line-height 27px
+
+		
+	.socials
+		margin-right 80px
+		
+	.phone-link
+		font-size 20px
+		
+	.callback,
+	.email-link
+		font-size 16px
+		line-height 1
+		
+	.callback
+		margin-bottom 7px
+		
+	.tools-links
+		margin-left 20px
+		
+	.phones
+		margin-left 20px
+		
+.copyright
+	color #777777
+	font 12px $Reg
+	line-height 1.25
+	padding 15px 0
+	
+	a
+		color inherit
+		&:hover
+			color $basic-white-color

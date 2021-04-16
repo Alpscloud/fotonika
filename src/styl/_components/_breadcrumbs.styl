@@ -1,12 +1,29 @@
 .breadcrumbs
+	margin-bottom 30px
 	&__item
 		display inline-block
-		margin-right 15px
+		margin-right 21px
 		position relative
+		&:after
+			content '>'
+			position absolute
+			left 100%
+			vertical-center()
+			font-size 12px
+			line-height 1
+			margin-left 9px
+			margin-top 3px
 		&:last-child
 			margin-right 0
+			&:after
+				display none
 	&__link
-		display block
+		font-size 12px
+		line-height 1
 		color $text-color
-		&.is-active
+		&:hover
 			color $accent-color
+			
+span.breadcrumbs__link
+	&:hover
+		color $text-color

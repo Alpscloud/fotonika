@@ -10,7 +10,284 @@
 
 		<!-- Main -->
 		<main class="main">
-			
+			<section class="page-inner page-inner-decor page-inner-decor-light">
+
+				<div class="page-entering">
+					<div class="container">
+						<!-- Breadcrumbs -->
+						<nav class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+										<a href="https://logodomik.ru/" class="breadcrumbs__link" title="Главная">
+											<span itemprop="name">Главная</span>
+										</a>
+										<meta itemprop="position" content="1">
+									</span>
+								</li>
+								<li class="breadcrumbs__item">
+									<span class="breadcrumbs__link">
+										<span itemprop="name">Личный кабинет</span>
+										<meta itemprop="position" content="2">
+									</span>
+								</li>
+							</ul>
+						</nav>
+						<!-- //Breadcrumbs -->
+
+						<h1 class="page-title block-title decor-title">Личный кабинет</h1>
+
+					</div>
+					<!-- //container -->
+				</div>
+
+
+				<div class="cabinet">
+					<div class="container">
+
+						<div class="cabinet-form">
+							<form>
+								<div class="form-group">
+									<span class="form-group__label-inline">Ф.И.О.</span>
+									<input type="text" name="name" class="form-input" value="Иванов Андрей Вальеревич">
+								</div>
+
+								<div class="form-group">
+									<span class="form-group__label-inline">Электронная почта</span>
+									<input type="text" name="email" class="form-input" value="example@gmail.com">
+								</div>
+
+								<div class="form-group">
+									<span class="form-group__label-inline">Телефон</span>
+									<input type="tel" name="phone" class="form-input" value="+7 (911) 365-16-48">
+								</div>
+
+								<div class="form-group">
+									<span class="form-group__label-inline">Компания</span>
+									<input type="text" name="company" class="form-input" value="">
+								</div>
+
+								<div class="form-group">
+									<span class="form-group__label-inline">Адрес</span>
+									<input type="text" name="address" class="form-input" value="">
+								</div>
+
+								<div class="form-group">
+									<button class="btn" type="submit">Сохранить</button>
+								</div>
+							</form>
+						</div>
+
+						<div class="orders-history__wrapper">
+							<h2 class="block-title">История заказов</h2>
+
+							<div class="orders-history">
+
+								<div class="orders-history__header">
+									<div class="row align-horisontal-start">
+										<div class="orders-history__col">
+											<span>№ заказа</span>
+										</div>
+										<!-- //col -->
+										<div class="orders-history__col">
+											<span>Дата</span>
+										</div>
+										<!-- //col -->
+										<div class="orders-history__col">
+											<span>Сумма</span>
+										</div>
+										<!-- //col -->
+									</div>
+								</div>
+
+								<div class="orders-history__body">
+									<!-- Item -->
+									<div class="orders-history__item">
+
+										<div class="orders-history__item--information">
+											<div class="row align-horisontal-start">
+												<div class="orders-history__col">
+													<span>1</span>
+												</div>
+												<!-- //col -->
+												<div class="orders-history__col">
+													<span>24 марта 2021 </span>
+												</div>
+												<!-- //col -->
+												<div class="orders-history__col">
+													<span>11 200 ₽</span>
+												</div>
+												<!-- //col -->
+											</div>
+
+											<button class="btn-toggle js-toggle-order-details-btn" type="button">
+												<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+													<polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"/>
+												</svg>
+											</button>
+										</div>
+
+										<div class="orders-history__item--details">
+											<!-- Product -->
+											<div class="orders-history__product">
+												<div class="row align-horisontal-between align-vertical-center">
+													<div class="orders-history__product--col">
+														<div class="orders-history__product--info">
+															<a href="page-product.html" class="orders-history__product--thumbnail">
+																<img src="img/mini.png" alt="">
+															</a>
+															<h3><a href="page-product.html">Ультракомпактный предусилитель серии SIP</a></h3>
+														</div>
+													</div>
+													<!-- //col -->
+													<div class="orders-history__product--col">
+														<span data-label="Стоимость">15 500 ₽</span>
+													</div>
+													<!-- //col -->
+													<div class="orders-history__product--col">
+														<span data-label="Кол-во">24 шт.</span>
+													</div>
+													<!-- //col -->
+													<div class="orders-history__product--col">
+														<span data-label="Сумма">372 000 ₽</span>
+													</div>
+													<!-- //col -->
+												</div>
+											</div>
+											<!-- //Product -->
+
+											<!-- Product -->
+											<div class="orders-history__product">
+												<div class="row align-horisontal-between align-vertical-center">
+													<div class="orders-history__product--col">
+														<div class="orders-history__product--info">
+															<a href="page-product.html" class="orders-history__product--thumbnail">
+																<img src="img/mini.png" alt="">
+															</a>
+															<h3><a href="page-product.html">Ультракомпактный предусилитель серии SIP</a></h3>
+														</div>
+													</div>
+													<!-- //col -->
+													<div class="orders-history__product--col">
+														<span data-label="Стоимость">100 ₽</span>
+													</div>
+													<!-- //col -->
+													<div class="orders-history__product--col">
+														<span data-label="Кол-во">1 шт.</span>
+													</div>
+													<!-- //col -->
+													<div class="orders-history__product--col">
+														<span data-label="Сумма">100 ₽</span>
+													</div>
+													<!-- //col -->
+												</div>
+											</div>
+											<!-- //Product -->
+										</div>
+									</div>
+									<!-- //Item -->
+
+									<!-- Item -->
+									<div class="orders-history__item">
+
+										<div class="orders-history__item--information">
+											<div class="row align-horisontal-start">
+												<div class="orders-history__col">
+													<span>2</span>
+												</div>
+												<!-- //col -->
+												<div class="orders-history__col">
+													<span>17 мая 2020 </span>
+												</div>
+												<!-- //col -->
+												<div class="orders-history__col">
+													<span>200 ₽</span>
+												</div>
+												<!-- //col -->
+											</div>
+
+											<button class="btn-toggle js-toggle-order-details-btn" type="button">
+												<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+													<polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"/>
+												</svg>
+											</button>
+										</div>
+
+										<div class="orders-history__item--details">
+											<!-- Product -->
+											<div class="orders-history__product">
+												<div class="row align-horisontal-between align-vertical-center">
+													<div class="orders-history__product--col">
+														<div class="orders-history__product--info">
+															<a href="page-product.html" class="orders-history__product--thumbnail">
+																<img src="img/mini.png" alt="">
+															</a>
+															<h3><a href="page-product.html">Ультракомпактный предусилитель</a></h3>
+														</div>
+													</div>
+													<!-- //col -->
+													<div class="orders-history__product--col">
+														<span data-label="Стоимость">5 500 ₽</span>
+													</div>
+													<!-- //col -->
+													<div class="orders-history__product--col">
+														<span data-label="Кол-во">124 шт.</span>
+													</div>
+													<!-- //col -->
+													<div class="orders-history__product--col">
+														<span data-label="Сумма">3 372 000 ₽</span>
+													</div>
+													<!-- //col -->
+												</div>
+											</div>
+											<!-- //Product -->
+
+											<!-- Product -->
+											<div class="orders-history__product">
+												<div class="row align-horisontal-between align-vertical-center">
+													<div class="orders-history__product--col">
+														<div class="orders-history__product--info">
+															<a href="page-product.html" class="orders-history__product--thumbnail">
+																<img src="img/mini.png" alt="">
+															</a>
+															<h3><a href="page-product.html">Ультракомпактный предусилитель серии SIP</a></h3>
+														</div>
+													</div>
+													<!-- //col -->
+													<div class="orders-history__product--col">
+														<span data-label="Стоимость">100 ₽</span>
+													</div>
+													<!-- //col -->
+													<div class="orders-history__product--col">
+														<span data-label="Кол-во">1 шт.</span>
+													</div>
+													<!-- //col -->
+													<div class="orders-history__product--col">
+														<span data-label="Сумма">100 ₽</span>
+													</div>
+													<!-- //col -->
+												</div>
+											</div>
+											<!-- //Product -->
+										</div>
+									</div>
+									<!-- //Item -->
+								</div>
+
+							</div>
+
+						</div>
+						
+					</div>
+					<!-- //container -->
+				</div>
+
+
+
+
+				
+
+			</section>
 		</main>
 		<!-- //Main -->
 

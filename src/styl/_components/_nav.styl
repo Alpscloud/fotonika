@@ -1,9 +1,126 @@
 .nav
-	&__item
-		display inline-block
-		margin-right 15px
-		&:last-child
-			margin-right 0
-	&__link
-		display block
-		color $text-color
+	&-panel
+		background-color $alternate-dark-bg
+		
+
+	&-list
+		&__wrapper
+			.logo
+				display none
+				margin-right 0
+				margin-bottom 30px
+			.btn-close
+				display none
+				position absolute
+				top 16px
+				right 16px
+			
+			.langs,
+			.phones
+				display none
+		&__item
+			display inline-block
+			margin-right 80px
+			position relative
+			.btn-arrow
+				display none
+			
+				
+			&:last-child
+				margin-right 0
+				
+			&:hover
+				.nav-list__link
+					color $basic-white-color
+					
+				.nav-sublist
+					opacity 1
+					visibility visible
+					pointer-events auto
+					
+			&--with-sublist
+				.nav-list__link
+					padding-left 25px
+					position relative
+					&:before
+						pseudo()
+						position absolute
+						left 0
+						vertical-center()
+						width 0
+						height 0
+						border-style solid
+						border-width 11px 5.5px 0 5.5px
+						border-color $accent-color transparent transparent transparent
+				
+
+		&__link
+			color #ababab
+			font 18px PtNarrow
+			padding 12px 0
+			letter-spacing 0.025em
+			flex-col-center()
+	
+	&-sublist
+		position absolute
+		top 100%
+		left 0
+		width 300px
+		z-index 5
+		transition all .2s ease-in-out
+		opacity 0
+		visibility hidden
+		pointer-events none
+	
+		
+		li
+			display block
+			margin-bottom 0
+			background-color $nav-sublist-link-hover-bg
+			.btn-arrow-link
+				display none
+			&:hover
+				> a
+					background-color $nav-sublist-link-hover-bg
+					
+				ul
+					opacity 1
+					visibility visible
+					pointer-events auto
+					
+			ul
+				position absolute
+				top 0
+				bottom 0
+				left 100%
+				z-index 5
+				width 300px
+				background-color $nav-sublist-link-hover-bg !important
+				opacity 0
+				visibility hidden
+				pointer-events none
+				a
+					background-color transparent
+					&:after
+						display none
+					&:hover
+						background-color $accent-color
+		a
+			display block
+			background-color $nav-sublist-link-bg
+			font 18px $PtNarrow
+			letter-spacing 0.025em
+			color $nav-sublist-link-color
+			padding 12px 40px 12px 24px
+			flex 1
+			position relative
+			&:after
+				pseudo()
+				position absolute
+				vertical-center()
+				right 15px
+				width 13px
+				height 13px
+				margin-top 2px
+				background url('../img/icons/svg/right-arrow.svg') 50% 50% no-repeat / contain
+			

@@ -1,0 +1,127 @@
+.cabinet
+	padding-bottom 40px
+	&-form
+		max-width 490px
+		margin-bottom 86px
+		
+		.form-group
+			position relative
+			padding-left 160px
+			
+		.btn
+			margin-top 23px
+			
+
+.orders-history
+	max-width 1045px
+	&__wrapper
+		.block-title
+			margin-bottom 32px
+	&__header
+		padding-left 30px
+		padding-right 30px
+		margin-bottom 25px
+		font 18px $PtNarrow
+		color $ultralight-text-color
+		.row
+			margin-left -5px
+			margin-right -5px
+			max-width 660px
+			width 100%
+	&__item
+		margin-bottom 9px
+		font 20px $PtNarrow
+		color $alternate-text-color
+		a
+			color inherit
+			&:hover
+				color $accent-color
+		&:last-child
+			margin-bottom 0
+			
+		&--information,
+		&--details
+			padding-left 30px
+			padding-right 30px
+			
+		&--information
+			
+			background-color $basic-white-color
+			padding-top 16px
+			padding-bottom 16px
+			position relative
+			.btn-toggle
+				position absolute
+				vertical-center()
+				right 25px
+				&.is-active
+					transform translateY(-50%) rotate(-180deg)
+			.row
+				margin-left -5px
+				margin-right -5px
+				max-width 660px
+				width 100%
+				
+		&--details
+			background-color #f9f9f9
+			padding-top 17px
+			padding-bottom 17px
+			display none
+			
+	&__col
+		padding-left 5px
+		padding-right 5px
+		width 100%
+		flex 1
+		&:nth-child(1)
+			max-width 195px
+		&:nth-child(2)
+			max-width 355px
+		&:nth-child(3)
+			text-align right
+			
+
+.orders-history
+	&__product
+		padding 17px 15px 17px 25px
+		border-bottom 1px solid $input-border-color
+		.row
+			margin-left -5px
+			margin-right -5px
+		&--col
+			padding-left 5px
+			padding-right 5px
+			flex 1
+			width 100%
+			text-align right
+			&:nth-child(1)
+				max-width 520px
+			&:nth-child(2)
+				max-width 105px
+			&:nth-child(3)
+				max-width 120px
+			&:nth-child(4)
+				max-width 200px
+				
+				
+		&:last-child
+			padding-bottom 0
+			margin-bottom 0
+			border-bottom none
+			
+		&:first-child
+			padding-top 0
+			
+		
+		&--info
+			display flex
+			align-items center
+			justify-content flex-start
+			max-width 380px
+			text-align left
+			
+		&--thumbnail
+			display block
+			flex none
+			width 80px
+			margin-right 50px

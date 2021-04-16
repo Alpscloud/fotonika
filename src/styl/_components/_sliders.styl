@@ -18,6 +18,45 @@
 			visibility hidden
 			pointer-events none
 			
+	&-pagination
+		.swiper-pagination-bullet
+			outline none
+			opacity 1
+			border-radius 0
+			margin-right 13px
+			width 16px
+			height 8px
+			background transparent
+			position relative
+			&:before
+				pseudo()
+				position absolute
+				left 0
+				top 0
+				height 100%
+				width 50%
+				background-color #a2a2a2
+				transition width .17s ease-in-out
+			&:last-child
+				margin-right 0
+			&-active
+				&:before
+					width 100%
+					background-color $accent-color
+			
 .swiper-container
 	*
 		box-sizing border-box
+		
+
+.promo-slider
+	background-color $basic-white-color
+	position relative
+	.slider-pagination
+		position absolute
+		z-index 2
+		horisontal-center()
+		bottom 36px
+		margin 0
+	.swiper-slide
+		height auto

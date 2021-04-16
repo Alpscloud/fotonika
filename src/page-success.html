@@ -51,75 +51,92 @@
 				</a>
 				<!-- //Logo -->
 
-				<!-- Search -->
-				<div class="search">
-					<form class="search-form">
-						<div class="search-form__group">
-							<input type="search" class="search-form__input" name="search" placeholder="Поиск">
-							<button type="submit" class="search-form__btn">
-								<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.005 512.005" style="enable-background:new 0 0 512.005 512.005;" xml:space="preserve">
-									<path d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667
-									S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6
-									c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587z
-									M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z"/>
-								</svg>
-							</button>
+				<div class="header-col row align-horisontal-between align-vertical-center">
+					<button class="btn-toggle-search js-toggle-search-btn" type="button"></button>
+
+					<!-- Search -->
+					<div class="search">
+	<form class="search-form">
+		<div class="search-form__group">
+			<input type="search" class="search-form__input" name="search" placeholder="Поиск">
+			<button type="submit" class="search-form__btn">
+				<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.005 512.005" style="enable-background:new 0 0 512.005 512.005;" xml:space="preserve">
+					<path d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667
+					S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6
+					c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587z
+					M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z"/>
+				</svg>
+			</button>
+		</div>
+	</form>
+</div>					<!-- //Search -->
+
+					<div class="header-tools">
+						<!-- Cart link -->
+						<a href="page-cart.html" class="cart-link" data-cart-count="99">
+
+							<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+
+								<g>
+									<path d="M508.764,74.466c-2.803-3.503-7.046-5.542-11.533-5.542H104.152L93.16,21.294c-1.547-6.701-7.514-11.448-14.391-11.448
+									h-64C6.613,9.846,0,16.459,0,24.616s6.613,14.769,14.769,14.769H67.02l74.612,323.321c1.546,6.701,7.514,11.448,14.391,11.448
+									h295.915c8.157,0,14.769-6.613,14.769-14.769c0-8.157-6.613-14.769-14.769-14.769H167.773l-11.36-49.231h296.511
+									c6.908,0,12.893-4.788,14.409-11.527L511.64,86.935C512.625,82.557,511.567,77.97,508.764,74.466z M441.108,265.846H149.596
+									L110.969,98.462h367.8L441.108,265.846z"/>
+								</g>
+
+								<g>
+									<path d="M216.615,393.846c-29.86,0-54.154,24.293-54.154,54.154s24.293,54.154,54.154,54.154c29.86,0,54.154-24.293,54.154-54.154
+									S246.476,393.846,216.615,393.846z M216.615,472.616C203.042,472.616,192,461.573,192,448s11.042-24.615,24.615-24.615
+									c13.573,0,24.615,11.042,24.615,24.615S230.188,472.616,216.615,472.616z"/>
+								</g>
+
+								<g>
+									<path d="M393.846,393.846c-29.86,0-54.154,24.293-54.154,54.154s24.293,54.154,54.154,54.154c29.86,0,54.154-24.293,54.154-54.154
+									S423.707,393.846,393.846,393.846z M393.846,472.616c-13.573,0-24.615-11.042-24.615-24.615s11.042-24.615,24.615-24.615
+									c13.573,0,24.615,11.042,24.615,24.615S407.419,472.616,393.846,472.616z"/>
+								</g>
+
+							</svg>
+
+						</a>
+						<!-- //Cart link -->
+
+						<a href="page-cabinet.html" class="login-link"><span>Личный кабинет</span></a>
+					</div>
+
+
+					<div class="header-contacts js-phones">
+						<div class="row align-horisontal-between align-vertical-center">
+							<div class="tools-links">
+								<p><button class="callback js-open-callback-form-btn" type="button">Обратная связь</button></p>
+								<p><a class="email-link" href="mailto:info@etm-p.ru">info@etm-p.ru</a></p>
+							</div>
+
+							<div class="phones ">
+								<p class="phone">
+									<span>Москва</span>
+									<a href="tel:+7 999 999-99-99" class="phone-link">+7 999 999-99-99</a>
+								</p>
+								<p class="phone">
+									<span>Санкт-Петербург</span>
+									<a href="tel:+7 414 871-51-32" class="phone-link">+7 414 871-51-32</a>
+								</p>
+							</div>
+
 						</div>
-					</form>
-				</div>
-				<!-- //Search -->
 
-				<div class="header-tools">
-					<!-- Cart link -->
-					<a href="page-cart.html" class="cart-link" data-cart-count="99">
-
-						<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-
-							<g>
-								<path d="M508.764,74.466c-2.803-3.503-7.046-5.542-11.533-5.542H104.152L93.16,21.294c-1.547-6.701-7.514-11.448-14.391-11.448
-								h-64C6.613,9.846,0,16.459,0,24.616s6.613,14.769,14.769,14.769H67.02l74.612,323.321c1.546,6.701,7.514,11.448,14.391,11.448
-								h295.915c8.157,0,14.769-6.613,14.769-14.769c0-8.157-6.613-14.769-14.769-14.769H167.773l-11.36-49.231h296.511
-								c6.908,0,12.893-4.788,14.409-11.527L511.64,86.935C512.625,82.557,511.567,77.97,508.764,74.466z M441.108,265.846H149.596
-								L110.969,98.462h367.8L441.108,265.846z"/>
-							</g>
-
-							<g>
-								<path d="M216.615,393.846c-29.86,0-54.154,24.293-54.154,54.154s24.293,54.154,54.154,54.154c29.86,0,54.154-24.293,54.154-54.154
-								S246.476,393.846,216.615,393.846z M216.615,472.616C203.042,472.616,192,461.573,192,448s11.042-24.615,24.615-24.615
-								c13.573,0,24.615,11.042,24.615,24.615S230.188,472.616,216.615,472.616z"/>
-							</g>
-
-							<g>
-								<path d="M393.846,393.846c-29.86,0-54.154,24.293-54.154,54.154s24.293,54.154,54.154,54.154c29.86,0,54.154-24.293,54.154-54.154
-								S423.707,393.846,393.846,393.846z M393.846,472.616c-13.573,0-24.615-11.042-24.615-24.615s11.042-24.615,24.615-24.615
-								c13.573,0,24.615,11.042,24.615,24.615S407.419,472.616,393.846,472.616z"/>
-							</g>
-
-						</svg>
-
-					</a>
-					<!-- //Cart link -->
-
-					<a href="page-cabinet.html" class="cabinet-link">Личный кабинет</a>
-				</div>
-
-
-				<div class="header-contacts">
-					<div class="header-contacts__links">
-						<p><button class="callback" type="button">Обратная связь</button></p>
-						<p><a href="mailto:info@etm-p.ru">info@etm-p.ru</a></p>
 					</div>
 
-					<div class="phones">
-						<p class="phone">
-							<span>Москва</span>
-							<a href="tel:+7 999 999-99-99" class="phone-link">+7 999 999-99-99</a>
-						</p>
-						<p class="phone">
-							<span>Санкт-Петербург</span>
-							<a href="tel:+7 414 871-51-32" class="phone-link">+7 414 871-51-32</a>
-						</p>
-					</div>
+					<button class="btn-toggle-phones js-toggle-phones-btn" type="button"></button>
+
+					<!-- Mobile menu btn -->
+					<button type="button" class="btn-hamburger js-open-mobile-menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<!-- //Mobile menu btn -->
 
 				</div>
 
@@ -130,24 +147,203 @@
 	<div class="nav-panel">
 		<div class="container">
 			<div class="row align-horisontal-between align-vertical-center nav-panel__row">
+
+
 				<!-- NAV -->
-				<nav class="nav">
-	<ul class="nav__list">
-		<li class="nav__item"><a href="#" class="nav__link">Link 1</a></li>
-		<li class="nav__item"><a href="#" class="nav__link">Link 2</a></li>
-		<li class="nav__item"><a href="#" class="nav__link">Link 3</a></li>
-		<li class="nav__item"><a href="#" class="nav__link">Link 4</a></li>
-	</ul>
+				<nav class="nav js-menu">
+	<div class="nav-list__wrapper">
+
+		<!-- Logo -->
+		<a href="index.html" class="logo">
+			<img src="img/logo.svg" alt="Фотоника Лого">
+		</a>
+		<!-- //Logo -->
+
+		<!-- Close menu -->
+		<button class="btn-close js-close-mobile-menu-btn" type="button">
+			<svg viewBox="0 0 311 311.07733"  xmlns="http://www.w3.org/2000/svg"><path d="m16.035156 311.078125c-4.097656 0-8.195312-1.558594-11.308594-4.695313-6.25-6.25-6.25-16.382812 0-22.632812l279.0625-279.0625c6.25-6.25 16.382813-6.25 22.632813 0s6.25 16.382812 0 22.636719l-279.058594 279.058593c-3.136719 3.117188-7.234375 4.695313-11.328125 4.695313zm0 0"/><path d="m295.117188 311.078125c-4.097657 0-8.191407-1.558594-11.308594-4.695313l-279.082032-279.058593c-6.25-6.253907-6.25-16.386719 0-22.636719s16.382813-6.25 22.636719 0l279.058594 279.0625c6.25 6.25 6.25 16.382812 0 22.632812-3.136719 3.117188-7.230469 4.695313-11.304687 4.695313zm0 0"/></svg>
+		</button>
+		<!-- //Close menu -->
+
+		<ul class="nav-list">
+			<li class="nav-list__item"><a class="nav-list__link" href="page-about.html">О компании</a></li>
+
+			<li class="nav-list__item nav-list__item--with-sublist">
+
+				<a class="nav-list__link" href="page-catalog.html">Продукты</a>
+
+				<button class="btn-arrow js-toggle-sublist-btn" type="button"></button>
+
+				<ul class="nav-sublist">
+					<li>
+						<a href="#">Оптомеханика</a>
+						<button class="btn-arrow-link js-toggle-sublist-btn" type="button"></button>
+
+						<ul>
+							<li><a href="page-subcatalog.html">Электрооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Акустооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Волоконно-оптические переключатели</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="#">Лазеры и лазерные системы</a>
+						<button class="btn-arrow-link js-toggle-sublist-btn" type="button"></button>
+
+						<ul>
+							<li><a href="page-subcatalog.html">Электрооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Акустооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Акустооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Волоконно-оптические переключатели</a></li>
+						</ul>
+					</li>
+
+					<li >
+						<a href="#" >Контрольно-измерительное оборудование</a>
+						<button class="btn-arrow-link js-toggle-sublist-btn" type="button"></button>
+
+						<ul>
+							<li><a href="page-subcatalog.html">Электрооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Электрооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Акустооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Акустооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Волоконно-оптические переключатели</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="#">Волоконо-оптические линии связи (ВОЛС) и Радиофотоника</a>
+						<button class="btn-arrow-link js-toggle-sublist-btn" type="button"></button>
+
+						<ul>
+							<li><a href="page-subcatalog.html">Электрооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Акустооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Волоконно-оптические переключатели</a></li>
+							<li><a href="page-subcatalog.html">Волоконно-оптические переключатели</a></li>
+							<li><a href="page-subcatalog.html">Волоконно-оптические переключатели</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="#">Пассивные волоконные компоненты</a>
+						<button class="btn-arrow-link js-toggle-sublist-btn" type="button"></button>
+
+						<ul>
+							<li><a href="page-subcatalog.html">Электрооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Акустооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Волоконно-оптические переключатели</a></li>
+						</ul>
+					</li>
+
+					<li >
+						<a href="#" >Элементы управления излучением</a>
+						<button class="btn-arrow-link js-toggle-sublist-btn" type="button"></button>
+
+						<ul>
+							<li><a href="page-subcatalog.html">Электрооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Электрооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Акустооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Волоконно-оптические переключатели</a></li>
+						</ul>
+					</li>
+
+					<li >
+						<a href="#" >Фотоприемники оптические</a>
+						<button class="btn-arrow-link js-toggle-sublist-btn" type="button"></button>
+
+						<ul>
+							<li><a href="page-subcatalog.html">Электрооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Электрооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Акустооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Акустооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Волоконно-оптические переключатели</a></li>
+						</ul>
+					</li>
+
+					<li >
+						<a href="#" >Оптические волокна</a>
+						<button class="btn-arrow-link js-toggle-sublist-btn" type="button"></button>
+
+						<ul>
+							<li><a href="page-subcatalog.html">Электрооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Электрооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Акустооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Волоконно-оптические переключатели</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="#" >Оптические усилители</a>
+						<button class="btn-arrow-link js-toggle-sublist-btn" type="button"></button>
+
+						<ul>
+							<li><a href="page-subcatalog.html">Электрооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Акустооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Акустооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Волоконно-оптические переключатели</a></li>
+							<li><a href="page-subcatalog.html">Волоконно-оптические переключатели</a></li>
+							<li><a href="page-subcatalog.html">Волоконно-оптические переключатели</a></li>
+						</ul>
+					</li>
+
+					<li >
+						<a href="#" >Оптика</a>
+						<button class="btn-arrow-link js-toggle-sublist-btn" type="button"></button>
+
+						<ul>
+							<li><a href="page-subcatalog.html">Электрооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Электрооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Акустооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Акустооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Волоконно-оптические переключатели</a></li>
+						</ul>
+					</li>
+
+					<li >
+						<a href="#">Кристаллы</a>
+						<button class="btn-arrow-link js-toggle-sublist-btn" type="button"></button>
+
+						<ul>
+							<li><a href="page-subcatalog.html">Электрооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Акустооптические модуляторы</a></li>
+							<li><a href="page-subcatalog.html">Волоконно-оптические переключатели</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+
+			<li class="nav-list__item"><a class="nav-list__link" href="page-brands.html">Производители</a></li>
+			<li class="nav-list__item"><a class="nav-list__link" href="page-knowledges.html">Знания</a></li>
+			<li class="nav-list__item"><a class="nav-list__link" href="page-blog.html">Новости</a></li>
+			<li class="nav-list__item"><a class="nav-list__link" href="page-contacts.html">Контактная информация</a></li>
+		</ul>
+
+		<div class="phones">
+			<p class="phone">
+				<span>Москва</span>
+				<a href="tel:+7 999 999-99-99" class="phone-link">+7 999 999-99-99</a>
+			</p>
+			<p class="phone">
+				<span>Санкт-Петербург</span>
+				<a href="tel:+7 414 871-51-32" class="phone-link">+7 414 871-51-32</a>
+			</p>
+		</div>
+
+
+		<ul class="langs">
+	<li><span class="is-active">Ru</span></li>
+	<li><a href="#">En</a></li>
+</ul>
+	</div>
 </nav>
 				<!-- //NAV -->
 
 
 				<!-- Langs -->
 				<ul class="langs">
-					<li><span class="is-active">Ru</span></li>
-					<li><a href="#">En</a></li>
-				</ul>
-				<!-- //Langs -->
+	<li><span class="is-active">Ru</span></li>
+	<li><a href="#">En</a></li>
+</ul>				<!-- //Langs -->
 
 			</div>
 		</div>
@@ -165,7 +361,177 @@
 		<!-- //Main -->
 
 		<!-- Footer -->
-		<footer class="footer"></footer>
+		<footer class="footer">
+	<div class="nav-panel">
+		<div class="container">
+			<div class="row align-horisontal-between align-vertical-center nav-panel__row">
+				<!-- NAV -->
+				<nav class="nav">
+	<ul class="nav-list">
+		<li class="nav-list__item"><a class="nav-list__link" href="page-about.html">О компании</a></li>
+		<li class="nav-list__item"><a class="nav-list__link" href="page-catalog.html">Продукты</a></li>
+		<li class="nav-list__item"><a class="nav-list__link" href="page-brands.html">Производители</a></li>
+		<li class="nav-list__item"><a class="nav-list__link" href="page-knowledges.html">Знания</a></li>
+		<li class="nav-list__item"><a class="nav-list__link" href="page-blog.html">Новости</a></li>
+		<li class="nav-list__item"><a class="nav-list__link" href="page-contacts.html">Контактная информация</a></li>
+	</ul>
+</nav>
+				<!-- //NAV -->
+
+
+				<!-- Langs -->
+				<ul class="langs">
+	<li><span class="is-active">Ru</span></li>
+	<li><a href="#">En</a></li>
+</ul>				<!-- //Langs -->
+
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+
+	<div class="footer__content">
+		<div class="container">
+			<div class="row align-vertical-center align-horisontal-between footer__row">
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<img src="img/logo-light.svg" alt="Фотоника Лого">
+				</a>
+				<!-- //Logo -->
+
+				<div class="footer-contacts">
+
+					<div class="footer-contacts__information">
+						<p class="basic-white-color">Москва, ул. Сайкина, 30</p>
+						<p>ежедневно с 10:00 до 24:00</p>
+					</div>
+
+
+					<div class="phones">
+						<p class="phone">
+							<a href="tel:+7 999 999-99-99" class="phone-link">+7 999 999-99-99</a>
+						</p>
+						<p class="phone">
+							<a href="tel:+7 414 871-51-32" class="phone-link">+7 414 871-51-32</a>
+						</p>
+					</div>
+
+					<div class="tools-links">
+						<p><button class="callback js-open-callback-form-btn" type="button">Заказать звонок</button></p>
+						<p><a class="email-link" href="mailto:info@etm-p.ru">info@etm-p.ru</a></p>
+					</div>
+				</div>
+
+				<ul class="socials">
+					<li class="socials__item">
+						<a href="#" target="_blank" rel="nofollow" class="socials__link">
+							<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 97.75 97.75" style="enable-background:new 0 0 97.75 97.75;" xml:space="preserve">
+								<path d="M48.875,0C21.883,0,0,21.882,0,48.875S21.883,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.867,0,48.875,0z
+								M73.667,54.161c2.278,2.225,4.688,4.319,6.733,6.774c0.906,1.086,1.76,2.209,2.41,3.472c0.928,1.801,0.09,3.776-1.522,3.883
+								l-10.013-0.002c-2.586,0.214-4.644-0.829-6.379-2.597c-1.385-1.409-2.67-2.914-4.004-4.371c-0.545-0.598-1.119-1.161-1.803-1.604
+								c-1.365-0.888-2.551-0.616-3.333,0.81c-0.797,1.451-0.979,3.059-1.055,4.674c-0.109,2.361-0.821,2.978-3.19,3.089
+								c-5.062,0.237-9.865-0.531-14.329-3.083c-3.938-2.251-6.986-5.428-9.642-9.025c-5.172-7.012-9.133-14.708-12.692-22.625
+								c-0.801-1.783-0.215-2.737,1.752-2.774c3.268-0.063,6.536-0.055,9.804-0.003c1.33,0.021,2.21,0.782,2.721,2.037
+								c1.766,4.345,3.931,8.479,6.644,12.313c0.723,1.021,1.461,2.039,2.512,2.76c1.16,0.796,2.044,0.533,2.591-0.762
+								c0.35-0.823,0.501-1.703,0.577-2.585c0.26-3.021,0.291-6.041-0.159-9.05c-0.28-1.883-1.339-3.099-3.216-3.455
+								c-0.956-0.181-0.816-0.535-0.351-1.081c0.807-0.944,1.563-1.528,3.074-1.528l11.313-0.002c1.783,0.35,2.183,1.15,2.425,2.946
+								l0.01,12.572c-0.021,0.695,0.349,2.755,1.597,3.21c1,0.33,1.66-0.472,2.258-1.105c2.713-2.879,4.646-6.277,6.377-9.794
+								c0.764-1.551,1.423-3.156,2.063-4.764c0.476-1.189,1.216-1.774,2.558-1.754l10.894,0.013c0.321,0,0.647,0.003,0.965,0.058
+								c1.836,0.314,2.339,1.104,1.771,2.895c-0.894,2.814-2.631,5.158-4.329,7.508c-1.82,2.516-3.761,4.944-5.563,7.471
+								C71.48,50.992,71.611,52.155,73.667,54.161z"/>
+							</svg>
+
+						</a>
+					</li>
+					<li class="socials__item">
+						<a href="#" target="_blank" rel="nofollow" class="socials__link">
+							<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m305 256c0 27.0625-21.9375 49-49 49s-49-21.9375-49-49 21.9375-49 49-49 49 21.9375 49 49zm0 0"/><path d="m370.59375 169.304688c-2.355469-6.382813-6.113281-12.160157-10.996094-16.902344-4.742187-4.882813-10.515625-8.640625-16.902344-10.996094-5.179687-2.011719-12.960937-4.40625-27.292968-5.058594-15.503906-.707031-20.152344-.859375-59.402344-.859375-39.253906 0-43.902344.148438-59.402344.855469-14.332031.65625-22.117187 3.050781-27.292968 5.0625-6.386719 2.355469-12.164063 6.113281-16.902344 10.996094-4.882813 4.742187-8.640625 10.515625-11 16.902344-2.011719 5.179687-4.40625 12.964843-5.058594 27.296874-.707031 15.5-.859375 20.148438-.859375 59.402344 0 39.25.152344 43.898438.859375 59.402344.652344 14.332031 3.046875 22.113281 5.058594 27.292969 2.359375 6.386719 6.113281 12.160156 10.996094 16.902343 4.742187 4.882813 10.515624 8.640626 16.902343 10.996094 5.179688 2.015625 12.964844 4.410156 27.296875 5.0625 15.5.707032 20.144532.855469 59.398438.855469 39.257812 0 43.90625-.148437 59.402344-.855469 14.332031-.652344 22.117187-3.046875 27.296874-5.0625 12.820313-4.945312 22.953126-15.078125 27.898438-27.898437 2.011719-5.179688 4.40625-12.960938 5.0625-27.292969.707031-15.503906.855469-20.152344.855469-59.402344 0-39.253906-.148438-43.902344-.855469-59.402344-.652344-14.332031-3.046875-22.117187-5.0625-27.296874zm-114.59375 162.179687c-41.691406 0-75.488281-33.792969-75.488281-75.484375s33.796875-75.484375 75.488281-75.484375c41.6875 0 75.484375 33.792969 75.484375 75.484375s-33.796875 75.484375-75.484375 75.484375zm78.46875-136.3125c-9.742188 0-17.640625-7.898437-17.640625-17.640625s7.898437-17.640625 17.640625-17.640625 17.640625 7.898437 17.640625 17.640625c-.003906 9.742188-7.898437 17.640625-17.640625 17.640625zm0 0"/><path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm146.113281 316.605469c-.710937 15.648437-3.199219 26.332031-6.832031 35.683593-7.636719 19.746094-23.246094 35.355469-42.992188 42.992188-9.347656 3.632812-20.035156 6.117188-35.679687 6.832031-15.675781.714844-20.683594.886719-60.605469.886719-39.925781 0-44.929687-.171875-60.609375-.886719-15.644531-.714843-26.332031-3.199219-35.679687-6.832031-9.8125-3.691406-18.695313-9.476562-26.039063-16.957031-7.476562-7.339844-13.261719-16.226563-16.953125-26.035157-3.632812-9.347656-6.121094-20.035156-6.832031-35.679687-.722656-15.679687-.890625-20.6875-.890625-60.609375s.167969-44.929688.886719-60.605469c.710937-15.648437 3.195312-26.332031 6.828125-35.683593 3.691406-9.808594 9.480468-18.695313 16.960937-26.035157 7.339844-7.480469 16.226563-13.265625 26.035157-16.957031 9.351562-3.632812 20.035156-6.117188 35.683593-6.832031 15.675781-.714844 20.683594-.886719 60.605469-.886719s44.929688.171875 60.605469.890625c15.648437.710937 26.332031 3.195313 35.683593 6.824219 9.808594 3.691406 18.695313 9.480468 26.039063 16.960937 7.476563 7.34375 13.265625 16.226563 16.953125 26.035157 3.636719 9.351562 6.121094 20.035156 6.835938 35.683593.714843 15.675781.882812 20.683594.882812 60.605469s-.167969 44.929688-.886719 60.605469zm0 0"/></svg>
+						</a>
+					</li>
+				</ul>
+
+				<!-- Search -->
+				<div class="search">
+	<form class="search-form">
+		<div class="search-form__group">
+			<input type="search" class="search-form__input" name="search" placeholder="Поиск">
+			<button type="submit" class="search-form__btn">
+				<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.005 512.005" style="enable-background:new 0 0 512.005 512.005;" xml:space="preserve">
+					<path d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667
+					S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6
+					c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587z
+					M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z"/>
+				</svg>
+			</button>
+		</div>
+	</form>
+</div>				<!-- //Search -->
+
+				<!-- Langs -->
+				<ul class="langs">
+	<li><span class="is-active">Ru</span></li>
+	<li><a href="#">En</a></li>
+</ul>				<!-- //Langs -->
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+
+	<div class="copyright dark-bg text-center">
+		<div class="container">
+			<p>Создание сайта — <a href="#" target="_blank" rel="nofollow">Энни’Джесс</a>. Все права защищены. 2007-2021</p>
+		</div>
+		<!-- //container -->
+
+	</div>
+</footer>
+
+<!-- Callback -->
+
+<div class="popup js-popup js-popup-callback">
+	<div class="popup__overflow">
+		<div class="popup__body text-center">
+			<button class="btn-close js-close-popup-btn" type="button">
+				<svg viewBox="0 0 311 311.07733"  xmlns="http://www.w3.org/2000/svg"><path d="m16.035156 311.078125c-4.097656 0-8.195312-1.558594-11.308594-4.695313-6.25-6.25-6.25-16.382812 0-22.632812l279.0625-279.0625c6.25-6.25 16.382813-6.25 22.632813 0s6.25 16.382812 0 22.636719l-279.058594 279.058593c-3.136719 3.117188-7.234375 4.695313-11.328125 4.695313zm0 0"/><path d="m295.117188 311.078125c-4.097657 0-8.191407-1.558594-11.308594-4.695313l-279.082032-279.058593c-6.25-6.253907-6.25-16.386719 0-22.636719s16.382813-6.25 22.636719 0l279.058594 279.0625c6.25 6.25 6.25 16.382812 0 22.632812-3.136719 3.117188-7.230469 4.695313-11.304687 4.695313zm0 0"/></svg>
+			</button>
+			<!-- Popup content-->
+			<div class="popup__content">
+				<p class="popup__title">Обратный звонок</p>
+
+				<form>
+					<div class="form-group">
+						<label class="form-group__label">
+							<span class="form-group__label--text">Введите ваше ФИО</span>
+							<input type="text" name="name" class="form-input">
+						</label>
+					</div>
+					<div class="form-group">
+						<label class="form-group__label">
+							<span class="form-group__label--text">Введите ваш телефон <span class="required">*</span></span>
+							<input type="tel" name="phone" class="form-input js-required-input">
+						</label>
+					</div>
+
+					<p class="form-notice"><span class="required">*</span> Поля обязательные для заполнения</p>
+
+					<div class="form-group">
+						<label class="form-checkbox__label">
+							<input name="privacy-policy" type="checkbox" checked>
+							<span class="form-checkbox">Соглашаюсь с политикой обработки персональных данных</span>
+						</label>
+					</div>
+
+					<button class="btn" type="submit">Отправить запрос</button>
+
+					<p class="error">Пожалуйста, заполните все обязательные поля</p>
+				</form>
+				
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Callback -->
 
 		<!-- //Footer -->
 
@@ -174,6 +540,9 @@
 
 	<!-- jQuery IF NEEDED-->
 <script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<!-- Google map -->
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBR5vIGzW3iFwxgUDP3TEFZR66J5LzJdhY"></script>
 
 <!-- All libs scripts -->
 <script src="js/libs.min.js"></script>
