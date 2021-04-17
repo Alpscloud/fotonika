@@ -45,6 +45,13 @@
 	.categories-cards__row
 		margin-left -15px
 		margin-right -15px
+		
+	// Subcatalog
+	.product-card__wrapper
+		width 33.3333%
+		
+	.product-card__thumbnail
+		height 260px
 
 +max-screen(1280px)
 	// Footer
@@ -72,7 +79,39 @@
 		span
 			display none
 			
+	// Catalog
+	.catalog-card
+		&__wrapper
+			width 100%
+			&:last-child
+				margin-bottom 0
+		&__thumbnail
+			width 40%
+		&__content
+			width 60%
+		
+			
+	.page-catalog
+		padding-bottom 100px
+		
+
+	.article-card
+		&__thumbnail
+			min-height 260px
+			width 40%
+		&__content
+			width 60%
+		&__wrapper
+			width 100%
+			&:last-child
+				margin-bottom 0
+				
+	.pagination__wrapper
+		margin-top 50px
+			
 +max-screen(1050px)
+	.page-inner-decor
+		background-position bottom right
 	// Header
 	
 	.header
@@ -362,7 +401,29 @@
 		.nav-list__item
 			margin-right 20px
 		
+	.product-card__wrapper
+		width 50%
+		
+	// Brand
+	.brand-content
+		&__row
+			flex-wrap wrap
+			
+		&__text
+			flex none
+			padding-right 0
+			width 100%
+			
+	.brand-photos
+		flex none
+		width calc(100% +30px)
+		margin-top 50px
+		max-width calc(100% +30px)
+		
+		
 
+	.brand-products
+		margin-top 50px
 		
 +max-screen(767px)
 	// Promo
@@ -425,7 +486,43 @@
 			font-size 24px
 			margin-bottom 25px
 		
-
++max-screen(700px)
+	// News
+	.article-card
+		flex-wrap wrap
+		padding 0
+		&__thumbnail
+			height auto
+			min-height auto
+			padding-top 70%
+			width 100%
+		&__content
+			width 100%
+			padding 30px 15px
+			
+		&__title
+			font-size 22px !important
+			margin-bottom 15px
+			line-height 26px !important
+			
+	.article-date
+		font-size 14px
+		margin-bottom 15px
+		padding-left 12px
+		&:before
+			width 3px !important
+			
+	// Pagination
+	.pagination
+		margin-top 50px
+		&-list
+			&__item
+				margin-right 10px
+			&__link
+				width 35px
+				height 35px
+				font-size 14px
+	
 +max-screen(620px)
 	body
 		font-size 14px
@@ -641,7 +738,99 @@
 			
 	.error
 		font-size 14px
-	
+		
+	// Catalog
+	.catalog-card
+		flex-wrap wrap
+		&__thumbnail
+			width 100%
+			padding 15px
+		&__content
+			width 100%
+			padding 15px
+			
+		&__title
+			font-size 22px
+			line-height 25px
+			margin-bottom 15px
+			
+	// Article
+	.article-container
+		padding-left 20px
+		padding-right 20px
+		
+	.page-article
+		.container
+			padding-left 0
+			padding-right 0
+			
+
+	.product-card__wrapper
+		width 100%
+		&:last-child
+			margin-bottom 0
+			
+	.product-card__thumbnail
+		padding 15px
+		height auto
+		
+	.product-card__content
+		padding 0 15px 30px 15px
+		
+	.product-card__title
+		font-size 22px
+		line-height 25px
+		margin-bottom 15px
+		
+	// Cards slider
+	.products-cards-slider
+		position static
+		
+		.slider-pagination
+			display block
+		
+		&__wrapper
+			position relative
+			
+			> .block-title
+				max-width 180px
+				
+	.slider-navigation__btn
+		transform none
+		top 0
+		&--next
+			right 0
+		&--prev
+			left auto
+			right 50px
+			
++max-screen(460px)
+	// Pagination
+	.pagination
+		margin-top 50px
+		&-list
+			&__item
+				margin-right 0
+			&__link
+				width 30px
+				height 30px
+				font-size 14px
+				
+
+	// Brand
+	.brand-photo__wrapper
+		width 100%
+		padding-left 0
+		padding-right 0
+		&:last-child
+			margin-bottom 0
+			
+	.brand-photos
+		width 100%
+		max-width 100%
+		margin-left 0
+		margin-right 0
+					
 +max-screen(430px)
 	.header-contacts 
 		.tools-links

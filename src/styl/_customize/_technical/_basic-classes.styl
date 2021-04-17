@@ -125,23 +125,53 @@
 	
 
 .content
+	color $secondary-text-color
 	*
 		&:last-child
 			margin-bottom 0
+		&:first-child
+			margin-top 0
 			
 	h2,h3,h3,h4,h5,h6
 		line-height 1
-		font-family $Bold
+		font-family $PtNarrowBold
+		margin 20px 0 30px
 		
 	strong, b
 		font-family $Bold
 		
+	h2
+		font-size 26px
+		line-height 29px
+		
+	h3
+		font-size 24px
+		line-height 26px
+		
+	h4
+		font-size 22px
+		line-height 24px
+		
+	h5
+		font-size 20px
+		line-height 22px
+	
+	h6
+		font-size 18px
+		line-height 19px
+	
+
+	a
+		font-family $SemiBold
+		color $accent-color
+		&:hover
+			text-decoration underline
 
 	ul, ol
 		li
 			display block
 			position relative
-			margin-bottom 10px
+			margin-bottom 15px
 			
 			&:last-child
 				margin-bottom 0
@@ -150,11 +180,13 @@
 		li
 			&:before
 				pseudo()
-				width 4px
-				height 4px
+				width 5px
+				height 5px
 				border-radius 50%
-				margin-right 4px
-				background-color $text-color
+				margin-right 6px
+				background-color $accent-color
+				vertical-align middle
+				
 				
 	ol
 		counter-reset list
@@ -164,12 +196,30 @@
 				content counter(list) ". "
 				display inline-block
 				margin-right 4px
+				vertical-align middle
+				color $accent-color
+				font-family $Bold
+				
+	img
+		display block
+		width auto
+		max-width 100%
+		margin 40px auto
+		
+
+	p, ul, ol, blockquote
+		margin 30px 0
+		
+	blockquote
+		padding 20px
+		background-color $blockquote-bg
+		
 
 
 .page-inner
 	padding 30px 0 100px
 	&-decor
-		background $basic-white-color url('../img/backgrounds/waves-cat.png') top right no-repeat
+		background $basic-white-color url('../img/backgrounds/waves-cat.png') bottom right no-repeat
 		&-light
 			background-color $light-bg
 			
@@ -179,3 +229,27 @@
 .block-title
 	font 30px $PtNarrow
 	color $alternate-text-color
+	line-height 34px
+	b, strong, span
+		text-transform uppercase
+		font-family $PtNarrowBold
+		
+	a
+		color inherit
+		&:hover
+			color $accent-color
+	
+
+.card
+	background-color $basic-white-color
+	border 2px solid transparent
+	transition border-color .17s ease-in-out
+	padding 35px 30px
+	height 100%
+	display flex
+	flex-wrap nowrap
+	color $card-text-color
+	&-content
+		padding-left 30px
+	&:hover
+		border-color $accent-color

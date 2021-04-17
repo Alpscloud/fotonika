@@ -19,11 +19,13 @@
 			pointer-events none
 			
 	&-pagination
+		text-align center
 		.swiper-pagination-bullet
 			outline none
 			opacity 1
 			border-radius 0
 			margin-right 13px
+			margin-bottom 6.5px
 			width 16px
 			height 8px
 			background transparent
@@ -43,6 +45,37 @@
 				&:before
 					width 100%
 					background-color $accent-color
+					
+	&-navigation__btn
+		display inline-block
+		width 36px
+		height 36px
+		border 1px solid #e2e2e2
+		position absolute
+		z-index 1
+		vertical-center()
+		svg
+			fill #e2e2e2
+			transition fill .17s ease-in-out
+			width 16px
+			position absolute
+		&--prev
+			left 30px
+			svg
+				left 50%
+				top 50%
+				transform translate(-50%, -50%) rotate(90deg)
+		&--next
+			right 30px
+			
+			svg
+				left 50%
+				top 50%
+				transform translate(-50%, -50%) rotate(-90deg)
+		&:hover
+			border-color $accent-color
+			svg
+				fill $accent-color
 			
 .swiper-container
 	*
@@ -60,3 +93,16 @@
 		margin 0
 	.swiper-slide
 		height auto
+		
+
+.products-cards-slider
+	position relative
+	.block-title
+		margin-bottom 30px
+		
+	.swiper-slide
+		height auto
+		
+	.slider-pagination
+		margin-top 20px
+		display none

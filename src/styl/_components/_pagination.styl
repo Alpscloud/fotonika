@@ -1,8 +1,37 @@
 .pagination
-	&__list
+	margin-top 29px
+	&-list
+		white-space nowrap
 		text-align center
-	&__item
-		display inline-block
-		margin-right 10px
-		&:last-child
-			margin-right 0
+		&__item
+			display inline-block
+			margin-right 17px
+			&:last-child
+				margin-right 0
+		&__link
+			flex-col-center()
+			width 50px
+			height 50px
+			background-color transparent
+			font 18px $Reg
+			color $card-text-color
+			line-height 50px
+			position relative
+			&:hover
+				background-color #e2e2e2
+			&.is-active
+				color $secondary-text-color
+				&:before
+					pseudo()
+					position absolute
+					width 100%
+					bottom 0
+					background-color $accent-color
+					height 2px
+			
+	&__wrapper
+		margin-top 20px
+		
+span.pagination-list__link
+	&:hover
+		background-color transparent
