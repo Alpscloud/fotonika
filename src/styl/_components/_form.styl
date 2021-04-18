@@ -61,13 +61,6 @@ form
 					fill $accent-color
 			
 
-form
-	&.is-error
-		.js-required-input
-			border-color $error-color
-			
-		.error
-			display block
 
 .form
 	&-input
@@ -84,17 +77,24 @@ form
 		&:focus
 			border-color $accent-color
 		&::-webkit-input-placeholder
-			font 1em $Reg
-			color $text-color
+			font 18px $PtNarrow 
+			letter-spacing 0.025em
+			color $ultralight-text-color
 		&::-moz-placeholder
-			font 1em $Reg
-			color $text-color
+			font 18px $PtNarrow 
+			letter-spacing 0.025em
+			color $ultralight-text-color
 		&:-moz-placeholder
-			font 1em $Reg
-			color $text-color
+			font 18px $PtNarrow 
+			letter-spacing 0.025em
+			color $ultralight-text-color
 		&:-ms-input-placeholder
-			font 1em $Reg
-			color $text-color
+			font 18px $PtNarrow 
+			letter-spacing 0.025em
+			color $ultralight-text-color
+			
+		&.is-error
+			border-color $error-color
 
 			
 		
@@ -129,6 +129,11 @@ form
 				letter-spacing 0.025em
 				color #919191
 				
+			&--textarea
+				span
+					transform none
+					top 13px
+				
 	&-textarea
 		min-height 200px
 		
@@ -151,6 +156,8 @@ form
 	font 18px $PtNarrow
 	letter-spacing 0.025em
 	display none
+	&.is-error
+		display block
 
 .form
 	&-checkbox
@@ -173,6 +180,17 @@ form
 			background-position 50% 50%
 			background-repeat no-repeat
 			background-size 12px 12px
+			background-color $basic-white-color
+			
+		&__static
+			width 20px
+			height 20px
+			padding-left 0
+			&:before
+				position relative
+				top auto
+				left auto
+			
 			
 		&__label
 			display inline-block

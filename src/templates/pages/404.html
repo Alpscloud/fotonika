@@ -1,0 +1,73 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main">
+			<section class="page-inner page-inner-decor page-inner-decor-light page-error">
+
+				<div class="page-entering">
+					<div class="container">
+						<!-- Breadcrumbs -->
+						<nav class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+										<a href="index.html" class="breadcrumbs__link" title="Главная">
+											<span itemprop="name">Главная</span>
+										</a>
+										<meta itemprop="position" content="1">
+									</span>
+								</li>
+								<li class="breadcrumbs__item">
+									<span class="breadcrumbs__link">
+										<span itemprop="name">Страница не найдена</span>
+										<meta itemprop="position" content="2">
+									</span>
+								</li>
+							</ul>
+						</nav>
+						<!-- //Breadcrumbs -->
+
+						<h1 class="page-title block-title decor-title">Страница не найдена</h1>
+
+					</div>
+					<!-- //container -->
+				</div>
+
+
+
+				<div class="block-404">
+					<div class="container">
+						<div class="block-404__error text-right">
+							<span class="block-404__error--label">Ошибка</span>
+							<span class="block-404__error--code">404</span>
+							<p>Запрашиваемая вами страница не найдена. <a href="index.html">Вернуться на главную страницу</a></p>
+						</div>
+					</div>
+					<!-- //container -->
+				</div>
+				
+
+			</section>
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

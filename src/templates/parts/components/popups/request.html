@@ -1,0 +1,62 @@
+
+<div class="popup js-popup js-popup-request">
+	<div class="popup__overflow">
+		<div class="popup__body text-center">
+			<button class="btn-close js-close-popup-btn" type="button">
+				<svg viewBox="0 0 311 311.07733"  xmlns="http://www.w3.org/2000/svg"><path d="m16.035156 311.078125c-4.097656 0-8.195312-1.558594-11.308594-4.695313-6.25-6.25-6.25-16.382812 0-22.632812l279.0625-279.0625c6.25-6.25 16.382813-6.25 22.632813 0s6.25 16.382812 0 22.636719l-279.058594 279.058593c-3.136719 3.117188-7.234375 4.695313-11.328125 4.695313zm0 0"/><path d="m295.117188 311.078125c-4.097657 0-8.191407-1.558594-11.308594-4.695313l-279.082032-279.058593c-6.25-6.253907-6.25-16.386719 0-22.636719s16.382813-6.25 22.636719 0l279.058594 279.0625c6.25 6.25 6.25 16.382812 0 22.632812-3.136719 3.117188-7.230469 4.695313-11.304687 4.695313zm0 0"/></svg>
+			</button>
+			<!-- Popup content-->
+			<div class="popup__content">
+				<p class="popup__title">Отправка запроса</p>
+
+				<form>
+					<div class="form-group">
+						<label class="form-group__label">
+							<span class="form-group__label--text">Введите ваше ФИО <span class="required">*</span></span>
+							<input type="text" name="name" class="form-input js-required-input is-error">
+						</label>
+					</div>
+					<div class="form-group">
+						<label class="form-group__label">
+							<span class="form-group__label--text">Введите вашу эл. почту <span class="required">*</span></span>
+							<input type="email" name="email" class="form-input js-required-input is-error">
+						</label>
+					</div>
+					<div class="form-group">
+						<label class="form-group__label">
+							<span class="form-group__label--text">Введите ваш телефон</span>
+							<input type="tel" name="phone" class="form-input ">
+						</label>
+					</div>
+					<div class="form-group">
+						<label class="form-group__label">
+							<span class="form-group__label--text">Введите название вашей компании</span>
+							<input type="text" name="copmany-name" class="form-input">
+						</label>
+					</div>
+					<div class="form-group">
+						<label class="form-group__label form-group__label--textarea">
+							<span class="form-group__label--text">Текст запроса</span>
+							<textarea name="request" class="form-input form-textarea"></textarea>
+						</label>
+					</div>
+
+					<p class="form-notice"><span class="required">*</span> Поля обязательные для заполнения</p>
+
+					<div class="form-group">
+						<label class="form-checkbox__label">
+							<input name="privacy-policy" type="checkbox" checked>
+							<span class="form-checkbox">Соглашаюсь с политикой обработки персональных данных</span>
+						</label>
+					</div>
+
+					<button class="btn" type="submit">Отправить запрос</button>
+
+					<p class="error is-error">Пожалуйста, заполните все обязательные поля</p>
+				</form>
+				
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>

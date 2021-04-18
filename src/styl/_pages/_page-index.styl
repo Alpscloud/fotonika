@@ -1,15 +1,10 @@
 // Promo
-.promo-slide
+.sect__promo
 	position relative
-	height 100%
-	min-height 550px
 	background rgb(240,240,240)
 	background -moz-linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(122,122,122,1) 35%, rgba(49,49,49,1) 78%, rgba(88,88,88,1) 100%)
 	background -webkit-linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(122,122,122,1) 35%, rgba(49,49,49,1) 78%, rgba(88,88,88,1) 100%)
 	background linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(122,122,122,1) 35%, rgba(49,49,49,1) 78%, rgba(88,88,88,1) 100%)
-	flex-col-center()
-	padding-top 80px
-	padding-bottom 80px
 	&:before
 		pseudo()
 		position absolute
@@ -17,6 +12,16 @@
 		fullSize()
 		background url('../img/backgrounds/waves.png') top -100px center no-repeat / cover
 		opacity .38
+	
+.promo-slide
+	position relative
+	height 100%
+	min-height 550px
+	
+	flex-col-center()
+	padding-top 80px
+	padding-bottom 80px
+	
 	
 	&__title
 		color $basic-white-color

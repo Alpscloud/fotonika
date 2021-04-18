@@ -162,10 +162,10 @@
 	
 
 	a
-		font-family $SemiBold
 		color $accent-color
+		border-bottom 1px solid 
 		&:hover
-			text-decoration underline
+			color $text-color
 
 	ul, ol
 		li
@@ -213,6 +213,22 @@
 	blockquote
 		padding 20px
 		background-color $blockquote-bg
+		
+	table
+		width 100%
+		font 14px $Light
+		color $product-text-color
+		tr
+			background-color $basic-white-color
+			&:nth-child(odd)
+				background-color #f3f3f3
+		td
+			width 50%
+			vertical-align middle		
+			padding 13px 25px
+			&:last-child
+				font-family $Reg
+				color $text-color
 		
 
 

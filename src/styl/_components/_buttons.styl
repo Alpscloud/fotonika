@@ -40,7 +40,28 @@
 				color #313131 !important
 				background-color $accent-color
 		
-							
+	&-delete
+		display inline-block
+		position relative
+		padding-left 23px
+		color $ultralight-text-color
+		span
+			border-bottom 1px solid
+			transition border-color .17s ease-in-out
+		svg
+			display block
+			width 11px
+			height 11px
+			position absolute
+			vertical-center()
+			left 0
+			transition fill .17s ease-in-out
+			fill $ultralight-text-color 		
+		&:hover
+			color $accent-color
+			svg
+				fill $accent-color
+						
 					
 	&-dark
 		background-color $basic-black-color
@@ -107,8 +128,10 @@
 		color #777777
 		padding 17px
 		text-align center
-		margin-right -4px
+		margin-right 1px
 		background-color #e2e2e2
+		&:last-child
+			margin-right 0
 		span
 			display inline-block
 			border-bottom 2px solid transparent

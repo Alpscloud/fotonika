@@ -1,0 +1,179 @@
+.cart
+	margin-bottom 34px
+	&__row
+		margin-left -10px
+		margin-right -10px
+		flex-wrap nowrap
+	&-col
+		padding-left 10px
+		padding-right 10px
+		flex none
+		white-space nowrap
+		&:nth-child(1)
+			width 100%
+			max-width 530px
+		&:nth-child(2)
+			width 90px
+		&:nth-child(3)
+			width 170px
+		&:nth-child(4)
+			width 115px
+		
+	&-header
+		margin-bottom 25px
+		color $ultralight-text-color
+		font 18px $PtNarrow
+		padding-left 95px
+		padding-right 240px
+		
+		.cart-col
+			&:first-child
+				padding-left 130px
+				
+
+.cart-product
+	position relative
+	background-color $basic-white-color
+	margin-bottom 9px
+	padding-left 95px
+	padding-right 240px
+	padding-top 20px
+	padding-bottom 20px
+	font 20px $PtNarrow
+	color $alternate-text-color
+	&:last-child
+		margin-bottom 0
+		
+	.btn-delete
+		position absolute
+		right 30px
+		vertical-center()
+		
+	.form-checkbox__label
+		position absolute
+		vertical-center()
+		left 30px
+		height 20px
+		
+	&__information
+		display flex
+		align-items center
+		justify-content flex-start
+		max-width 375px
+		white-space normal
+	&__thumbnail
+		display block
+		flex none
+		width 90px
+		margin-right 30px
+		img
+			display block
+			width 100%
+	
+	&__title
+		
+		line-height 22px
+		a
+			color inherit
+			&:hover
+				color $accent-color
+				
+
+.product-quantity
+	width 150px
+	display flex
+	align-items center
+	&__btn
+		display inline-block
+		flex none
+		width 20px
+		height 20px
+		border 1px solid $alternate-light-text-color
+		font 20px $Reg
+		color $alternate-light-text-color
+		text-align center
+		position relative
+		&:before
+			position absolute
+			position-center()
+			color inherit
+			transition color .17s ease-in-out
+			line-height 1
+			pointer-events none
+		&.minus
+			&:before
+				content '–'
+				margin-top -2px
+		&.plus
+			&:before
+				content '+'
+		&:hover
+			border-color $accent-color
+			background-color $accent-color
+			&:before
+				color $secondary-text-color
+				
+	&__input
+		display none
+		-moz-appearance textfield
+		&::-webkit-outer-spin-button
+		&::-webkit-inner-spin-button 
+			appearance none
+			-webkit-appearance none
+			margin 0
+	&__unit
+		display block
+		flex 1
+		margin-left 15px
+		margin-right 15px
+		text-align center
+		font 20px $PtNarrow
+		color $alternate-text-color
+		position relative
+		&:after
+			content ' шт.'
+			
+
+.cart-footer
+	margin-top 48px
+	font 20px $PtNarrow
+	color $alternate-text-color
+	padding-right 240px
+	
+.cart-total
+	text-align right
+	span
+		display inline-block
+		margin-right 30px
+		
+
+.cart-checkout
+	.block-title
+		margin-bottom 40px
+		
+	form
+		width 100%
+		max-width 1050px
+		
+
+.form-groups
+	&__row
+		margin-bottom 26px
+	&__col
+		flex 1
+
+
+		&:first-child
+			max-width 330px
+		&:last-child
+			.form-group,
+			.form-group__label
+				height 100%
+			
+			.form-textarea
+				height 100%
+				
+			.form-group__label--text
+				margin-top 2px
+		
+	

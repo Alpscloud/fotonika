@@ -1,0 +1,145 @@
+.page-product
+	padding-bottom 0
+	
+.product
+	color $product-text-color
+	&-content
+		padding-bottom 30px
+		&__col
+			max-width 500px
+			flex 1
+		&__text
+			margin-bottom 60px	
+		.block-title
+			margin-bottom 29px
+		
+
+		
+	&-manufacturer
+		font-size 14px
+		line-height 16px
+		margin-bottom 20px
+		
+	&-prices
+		display flex
+		justify-content flex-start
+		margin-left -10px
+		margin-right -10px
+		margin-bottom 70px
+	
+	&-price
+		font-family $PtNarrow
+		font-size 24px
+		line-height 1
+		&-main
+			font-size 30px
+			color $secondary-text-color
+		&__col
+			padding-left 10px
+			padding-right 10px
+			width 33.3333%
+			display flex
+			flex-direction column
+			justify-content space-between
+			
+		&__label
+			font-size 14px
+			display block
+			margin-bottom 10px
+			
+	&-tools
+		.btn
+			margin-right 30px
+			&:last-child
+				margin-right 0
+				
+	&-slider
+		&__col
+			flex 1
+			min-width 0
+			width 100%
+			max-width 620px
+			margin-right 100px
+			display flex
+			flex-wrap nowrap
+			justify-content flex-start
+			position relative
+			
+
+.product-information
+	padding 30px 0 140px
+	background $light-bg url('../img/backgrounds/waves-cat.png') bottom right no-repeat
+	
+	&__tabs
+		.tab-controls
+			display flex
+			flex-wrap wrap
+		.btn-tab
+			width 100%
+			flex 1 0 220px
+			max-width 220px
+			margin-right 1px
+			
+	.block-title
+		margin-bottom 50px
+		
+	.products-cards-slider__wrapper
+		margin-bottom 50px
+		&:last-child
+			margin-bottom 0
+			
+		.block-title
+			margin-bottom 30px
+
+
+.product-characteristics
+	max-width 645px
+	table
+		width 100%
+		font 14px $Light
+		color $product-text-color
+		tr
+			background-color $basic-white-color
+			&:nth-child(odd)
+				background-color #f3f3f3
+		td
+			width 50%
+			vertical-align middle		
+			padding 13px 25px
+			&:last-child
+				font-family $Reg
+				color $text-color
+				
+
+.product-file
+	margin-bottom 30px
+	&:last-child
+		margin-bottom 0
+		
+	&__link
+		display inline-flex
+		align-items center
+		justify-content flex-start
+		font 14px $Reg
+		color $text-color
+		&--ic
+			flex none
+			width 35px
+			height 40px
+			margin-right 20px
+			background-repeat no-repeat
+			background-size contain
+			background-position 50% 50%
+		&--text
+
+			text-decoration underline
+			
+			
+		&--size
+			font-size 12px
+			color $ultralight-text-color !important
+			display inline-block
+			margin-left 20px
+			
+		&:hover
+			color $accent-color

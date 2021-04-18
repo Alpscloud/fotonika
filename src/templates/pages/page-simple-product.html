@@ -10,13 +10,142 @@
 
 		<!-- Main -->
 		<main class="main">
-			
+			<section class="page-inner page-product">
+
+				<div class="page-entering">
+					<div class="container">
+						<!-- Breadcrumbs -->
+						<nav class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+										<a href="index.html" class="breadcrumbs__link" title="Главная">
+											<span itemprop="name">Главная</span>
+										</a>
+										<meta itemprop="position" content="1">
+									</span>
+								</li>
+								<li class="breadcrumbs__item">
+									<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+										<a href="page-catalog.html" class="breadcrumbs__link" >
+											<span itemprop="name">Волоконные компоненты</span>
+										</a>
+										<meta itemprop="position" content="2">
+									</span>
+								</li>
+								<li class="breadcrumbs__item">
+									<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+										<a href="page-subcatalog.html" class="breadcrumbs__link" >
+											<span itemprop="name">Волоконная оптомеханика</span>
+										</a>
+										<meta itemprop="position" content="3">
+									</span>
+								</li>
+								<li class="breadcrumbs__item">
+									<span class="breadcrumbs__link">
+										<span itemprop="name">PDB465C Балансный фотодетектор </span>
+										<meta itemprop="position" content="4">
+									</span>
+								</li>
+							</ul>
+						</nav>
+						<!-- //Breadcrumbs -->
+
+					</div>
+					<!-- //container -->
+				</div>
+
+
+				<div class="product">
+
+					{% include '../parts/sections/product-content.html' %}
+
+					<div class="product-information">
+						<div class="container">
+
+							<div class="product-information__tabs">
+
+								<!-- Controls -->
+								<div class="tab-controls">
+									<button class="js-tab-btn btn-tab is-active" type="button"><span>Файлы</span></button>
+									<button class="js-tab-btn btn-tab" type="button"><span>Сопутствующие товары</span></button>
+								</div>
+								<!-- //Controls -->
+
+								<div class="tab-content">
+
+									<div class="tab-content-item js-tab-content">
+										<h2 class="block-title">Файлы</h2>
+
+										<div class="product-files">
+											<div class="product-file">
+												<a href="#" target="_blank" rel="nofollow" class="product-file__link">
+													<span class="product-file__link--ic" style="background-image: url('img/icons/svg/pdf.svg');"></span>
+													<span class="product-file__link--text">Инструкция по экспулатации</span>
+													<span class="product-file__link--size">1,2 МБ</span>
+												</a>
+											</div>
+
+											<div class="product-file">
+												<a href="#" target="_blank" rel="nofollow" class="product-file__link">
+													<span class="product-file__link--ic" style="background-image: url('img/icons/svg/pdf.svg');"></span>
+													<span class="product-file__link--text">Гарантийный талон</span>
+													<span class="product-file__link--size">235 КБ</span>
+												</a>
+											</div>
+
+											<div class="product-file">
+												<a href="#" target="_blank" rel="nofollow" class="product-file__link">
+													<span class="product-file__link--ic" style="background-image: url('img/icons/svg/pdf.svg');"></span>
+													<span class="product-file__link--text">Описание</span>
+													<span class="product-file__link--size">64,2 МБ</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<!-- //item -->
+
+									<div class="tab-content-item js-tab-content">
+										<!-- Slider -->
+										<div class="products-cards-slider__wrapper">
+											<h2 class="block-title">Аксессуары</h2>
+
+											{% include '../parts/sections/products-cards-slider.html' %}
+										</div>
+										<!-- //Slider -->
+
+										<!-- Slider -->
+										<div class="products-cards-slider__wrapper">
+											<h2 class="block-title">Аналоги других производителей</h2>
+
+											{% include '../parts/sections/products-cards-slider.html' %}
+										</div>
+										<!-- //Slider -->
+
+
+									</div>
+									<!-- //item -->
+								</div>
+
+							</div>
+						</div>
+						<!-- //container -->
+					</div>
+
+				</div>
+
+
+			</section>
 		</main>
 		<!-- //Main -->
 
 		<!-- Footer -->
 		{% include '../parts/sections/footer.html' %}
 		<!-- //Footer -->
+
+		<!-- Request -->
+		{% include '../parts/components/popups/request.html' %}
+		<!-- //Request -->
 
 	</div>
 	<!-- //CONTENT WRAPPER -->
