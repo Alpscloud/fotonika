@@ -1,0 +1,101 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main">
+			<section class="page-inner page-brand">
+
+				<div class="page-entering">
+					<div class="container">
+						<!-- Breadcrumbs -->
+						<nav class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+										<a href="index.html" class="breadcrumbs__link" title="Главная">
+											<span itemprop="name">Главная</span>
+										</a>
+										<meta itemprop="position" content="1">
+									</span>
+								</li>
+
+								<li class="breadcrumbs__item">
+									<span class="breadcrumbs__link">
+										<span itemprop="name">О компании</span>
+										<meta itemprop="position" content="2">
+									</span>
+								</li>
+							</ul>
+						</nav>
+						<!-- //Breadcrumbs -->
+
+						<h1 class="page-title block-title decor-title block-title">О компании</h1>
+
+					</div>
+					<!-- //container -->
+				</div>
+
+
+				<div class="brand">
+					<div class="container">
+						<div class="brand-content">
+
+							<div class="row align-horisontal-between brand-content__row align-vertical-start">
+								<div class="brand-content__text">
+									<div class="content">
+										<p>Thorlabs has been in a quiet partnership with our customers for years. We'd like to take this ongoing dialog and make it more effective by asking you, our customer, to provide specific input to help us become a better manufacturer.</p>
+										<p>My commitment to you is that if you take the time to respond, I will personally review each of these responses and factor them into our product development or improvement plans. Additionally, if you'd like to comment on our service, or ways to improve it, I would greatly appreciate the effort.</p>
+										<p>Sincerely, <br>Alex Cable <br>Founder and President</p>
+									</div>
+
+								</div>
+								<div class="brand-photos">
+									<div class="brand-photo__wrapper col-w-50">
+										<div class="brand-photo thumbnail">
+											<img src="img/brand-1.jpg" alt="">
+										</div>
+									</div>
+
+									<div class="brand-photo__wrapper col-w-50">
+										<div class="brand-photo thumbnail">
+											<img src="img/brand-2.jpg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						
+					</div>
+					<!-- //container -->
+				</div>
+
+
+
+			</section>
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+		<!-- Request -->
+		{% include '../parts/components/popups/request.html' %}
+		<!-- //Request -->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

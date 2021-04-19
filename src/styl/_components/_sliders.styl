@@ -98,6 +98,9 @@
 		margin 0
 	.swiper-slide
 		height auto
+		&-active
+			.promo-slide
+				opacity 1
 		
 
 .products-cards-slider
@@ -145,7 +148,17 @@
 		height 100%
 	img
 		@extends .content-img
-		
+	
+	&.is-video
+		position relative
+		&:before
+			pseudo()
+			position absolute
+			width 40px
+			height 40px
+			position-center()
+			z-index 1
+			background url('../img/icons/svg/video.svg') no-repeat / contain
 	&-thumbnail
 		flex-col-center()
 		border 1px solid $nav-sublist-link-bg
