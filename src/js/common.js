@@ -235,6 +235,22 @@ $(document).ready(function() {
 	});
 
 
+	$('.js-add-to-cart-btn').on('click', function(e) {
+		e.preventDefault();
+
+		var productImg = $(this).attr('data-product-img');
+		var productPrice = $(this).attr('data-product-price');
+
+		$('.js-popup-added-to-cart').find('.product-price').html(productPrice);
+		$('.js-popup-added-to-cart').find('img').attr('src', productImg);
+
+		$('html').addClass('is-fixed');
+		$('.js-popup-added-to-cart').fadeIn(300);
+
+
+	});
+	// ===========
+
 	$('.form-input').on('focus', function() {
 		var label = $(this).parents('.form-group__label');
 
