@@ -87,6 +87,12 @@ $(document).ready(function() {
 	});
 
 
+	$('.product-content__col, .product-slider__col').theiaStickySidebar({
+		'additionalMarginTop': 20,
+		'disableOn': false
+	});
+
+
 	
 
 	// Sliders
@@ -119,13 +125,22 @@ $(document).ready(function() {
 		function initProductsCardsSlider() {
 
 			productsCardsSliderInit.each(function() {
+
 				var self = $(this);
 				var wrapper = self.parents('.products-cards-slider');
+
+				var slidesCount = wrapper.find('.swiper-slide').length;
+
+				if (slidesCount < 4) {
+					var loop = false;
+				} else {
+					var loop = true;
+				}
 
 				var productsCardsSlider = new Swiper(self, {
 					slidesPerView: 1,
 					spaceBetween: 10,
-					loop: true,
+					loop: loop,
 					pagination: {
 						clickable: true,
 						el: wrapper.find('.js-products-cards-slider-pagination')
